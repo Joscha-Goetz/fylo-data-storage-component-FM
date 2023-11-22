@@ -186,4 +186,31 @@ body {
     background-image: url('images/bg-mobile.png');
     background-size: cover;
   }
+  .wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    height: 80%;
+  }
+  .fylo {
+    height: 12.5rem;
+  }
+  .storage {
+    width: 22rem;
+    height: 11rem;
+    text-align: center;
+  }
+  .triangle {
+    border: 0;
+  }
+  .storage__left {
+    height: 4.5rem;
+    bottom: -2.25rem;
+    top: auto;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 12.5rem;
+  }
 }
