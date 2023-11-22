@@ -15,25 +15,32 @@
 <body>
 
   <div class="wrapper">
-    <div class="fylo">
-      <img src="images/logo.svg" alt="Fylo logo">
+    <div class="fylo card">
+      <div class="logo"><img src="images/logo.svg" alt="Fylo logo"></div>
       <div class="fylo__flex-wrapper">
-        <img src="images/icon-document.svg" alt="document icon">
-        <img src="images/icon-folder.svg" alt="folder icon">
-        <img src="images/icon-upload.svg" alt="upload icon">
+        <div class="icon-container"><img src="images/icon-document.svg" alt="document icon" class="icon"></div>
+        <div class="icon-container"><img src="images/icon-folder.svg" alt="folder icon" class="icon"></div>
+        <div class="icon-container"><img src="images/icon-upload.svg" alt="upload icon" class="icon"></div>
       </div>
     </div>
-    <div class="storage">
+    <div class="storage card">
       <p class="storage__used">You’ve used <span class="bold">815 GB</span> of your storage</p>
-      <p class="storage__left"><span class="bold">185 GB</span> Left</p>
-      <div class="progress-bar">
-        <div class="active-bar">
-          <div class="white-point"></div>
-        </div>
+      <!-- ?speech bubble -->
+      <div class="storage__left">
+        <div class="bold big">185</div><div class="bold gb-left"> GB Left </div>
+        <div class="triangle"></div>
       </div>
-      <div class="storage__flex-wrapper">
-        <p class="storage__min-storage bold">0 GB</p>
-        <p class="storage__max-storage bold">1000 GB</p>
+
+      <div class="progress-bar">
+        <div class="progress-bar__background">
+          <div class="progress-bar__active">
+            <div class="progress-bar__white-point"></div>
+          </div>
+        </div>
+        <div class="progress-bar__flex-wrapper">
+          <p class="storage__min-storage bold">0 GB</p>
+          <p class="storage__max-storage bold">1000 GB</p>
+        </div>
       </div>
     </div>
   </div>
